@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.student.finalversion.do_ing">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/doingfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="20dp"
+        android:src="@drawable/bunny"
+
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+</RelativeLayout>

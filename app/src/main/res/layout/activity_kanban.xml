@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.finalversion.Kanban">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/kanbanblur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kanbanpick"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/kanban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:fontFamily="monospace"
+        android:text="K a n b a n"
+        android:textColor="#66ccff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/tobedoing"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kanban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:background="#ffccff"
+        android:elevation="2dp"
+        android:fontFamily="monospace"
+        android:textSize="15dp"
+        android:text=" t o   d o "
+        android:textAllCaps="false"
+        android:textColor="#66ccff" />
+
+    <Button
+        android:id="@+id/doing"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/kanban"
+        android:layout_alignRight="@+id/kanban"
+        android:layout_below="@+id/tobedoing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="#ffccff"
+        android:elevation="2dp"
+        android:fontFamily="monospace"
+        android:textSize="15dp"
+        android:text=" d o i n g "
+        android:textAllCaps="false"
+        android:textColor="#66ccff" />
+
+    <Button
+        android:id="@+id/done"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doing"
+        android:layout_alignStart="@+id/doing"
+        android:layout_below="@+id/doing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#ffccff"
+        android:elevation="2dp"
+        android:fontFamily="monospace"
+        android:textSize="15dp"
+        android:text=" d o n e "
+        android:textAllCaps="false"
+        android:textColor="#66ccff" />
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
